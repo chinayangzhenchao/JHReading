@@ -8,7 +8,7 @@ import {
     TextInput,
     TouchableOpacity
 } from 'react-native';
-import CommonNav from './../util/JHCommonNav';
+import CommonNav from './../Util/CommonNavigation';
 
 // 获取当前设备的宽度
 const Dimensions = require('Dimensions');

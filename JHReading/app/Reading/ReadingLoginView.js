@@ -14,18 +14,18 @@ import {
     Text,
     View,
     Image,
-    TouchableOpacity
+    TouchableOpacityU
 } from 'react-native';
 
-import Util from './../util/Util';
+import Util from './../til/Util';
 import LoginView from './../Mine/LoginView'
-
+I
 export default class ReadingLoginView extends Component {
     render() {
         return (
             <View style={styles.container}>
                  <View style={styles.viewStyle}>
-                     <image style={styles.iconStyle} source={require('./../../images/person.png')}/>
+                     <mage style={styles.iconStyle} source={require('./../../images/person.png')}/>
                      <Text>未登录&nbsp;|&nbsp;</Text>
                      <TouchableOpacity onPress={()=>this._longinBtn()}>
                          <Text style={{color:'red'}}>立即登录</Text>

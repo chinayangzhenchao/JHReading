@@ -13,11 +13,11 @@ import {
     Text,
     View,
     Image,
-    TouchableOpacity
+    TouchableOpacityU
 } from 'react-native';
 
 import Swiper from 'react-native-swiper'
-import Util from './../util/JHUtil';
+import Util from './../Util/Util';
 import ReadingDetailView from './ReadingDetailView'
 
 export default class ReadingTopView extends Component {
@@ -31,7 +31,7 @@ export default class ReadingTopView extends Component {
     render() {
         return (
             <Swiper style={styles.container}>
-                {this.props.topArray.map(item, key, () => {
+                {this.props.topArray.map((item, key) => {
                     return (
                         <TouchableOpacity key={key} onPress={() => this._pushToDetail(item.url)}>
                             <Image source={{uri: item.image}} style={styles.imgStyle}/>
